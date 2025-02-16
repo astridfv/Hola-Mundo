@@ -1,0 +1,84 @@
+body {
+  background-image: url("tilin2.jpg"); /* Mantiene tu fondo */
+  background-size: cover;
+  background-position: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: white;
+  text-align: center;
+  overflow: hidden; /* Para que los corazones no hagan scroll */
+}
+
+.contenedor {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 0px 0px 15px pink;
+}
+
+.titulo {
+  font-size: 40px;
+  text-shadow: 2px 2px 5px hotpink;
+}
+
+.mensaje {
+  font-size: 20px;
+}
+
+.boton-magico {
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  border: 3px solid white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-shadow: 1px 1px 3px black;
+}
+
+.boton-magico:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px hotpink;
+}
+
+/* Oculta cosas */
+.hidden {
+  display: none;
+}
+
+.mensaje-secreto {
+  font-size: 15px;
+  color: #ffccff;
+  text-shadow: 2px 2px 5px white;
+}
+
+/* ESTILO PARA LA CUENTA REGRESIVA ⏳ */
+.cuenta-regresiva {
+  font-size: 24px;
+  color: #ffccff;
+  text-shadow: 2px 2px 5px hotpink;
+  margin-bottom: 10px;
+}
+
+/* ANIMACIÓN DE CORAZONES FLOTANTES 💖 */
+.corazon {
+  position: fixed;
+  top: -10px;
+  font-size: 24px;
+  color: pink;
+  animation: flotar 5s linear infinite;
+}
+
+@keyframes flotar {
+  0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(100vh) scale(0.5);
+      opacity: 0;
+  }
+}
