@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1 class="titulo">Tú eres mi mundo</h1>
+        <p class="mensaje">Eres lo mejor que me ha pasado, te amo mi solecito wiwiiw</p>
+        <p class="mensaje">imagina que es mi cabeza y dame un tap uwu</p>
+        
+        <!-- Cuenta regresiva -->
+        <p id="cuenta-regresiva" class="cuenta-regresiva">Esperaaa... 20</p>
+
+        <!-- El botón está oculto al inicio -->
+        <button id="boton-magico" class="boton-magico hidden" onclick="mostrarMensaje()">suscríbete y dale like ;v</button>
+
+        <div id="mensaje-secreto" class="hidden">
+            <p class="mensaje-secreto">Gracias por estar siempre acompañándome, por ser el amor de mi vida, sobre todo mi mejor amigo<3 ... Ahora corre antes de que nos peguen con el fierro golpeador de parejas felices D:</p>
+        </div>
+    </div>
+
+    <!-- Música de fondo -->
+    <audio id="musica-fondo" autoplay loop>
+        <source src="cancion 1.mp3" type="audio/mpeg" autoplay loop>
+    </audio>
+
+    <!-- Música sorpresa -->
+    <audio id="musica-secreta">
+        <source src="cancion 2.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
